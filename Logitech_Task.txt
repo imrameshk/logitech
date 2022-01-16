@@ -1,0 +1,89 @@
+Hi Ramesh,
+
+
+
+Greetings from Logitech! This email is a follow-up to Abirami's conversation with you.
+
+
+We expect you to build an automation framework of your choice of language/framework for the below two scenarios. During the test development,  you should also consider having :
+
+· Clean framework structure 
+
+· Data handling (JSON, Excel, Etc..) 
+
+· Screenshots on failure
+
+· Reporting
+
+· Test assertions
+
+· Exception handling
+
+Considering the festive holidays we expect you to share the code by 15th of January (Saturday) EOD through your personal git repository. Meanwhile, If you get into some queries, please drop us an email and we will assist you on the same.
+
+ 
+
+Scenario 1 - Design an automation framework and develop the given frontend automation test cases for the below website
+
+Website: http://the-internet.herokuapp.com/
+
+TestCase-1
+Step 1 - Launch the site then click on Form Authentication
+Step 2 - Get the username and password from the given text and store them in an external file.
+Step 3 - Read that username and password from the external file and log in with those credentials
+Step 4 - Validate the login success.
+Step 5 - Enter any invalid credentials and validate the failure scenario as well.
+
+TestCase-2
+Step 1 - Select Dynamic Loading the click "Example 2: Element rendered after the fact"
+Step 2 - Click Start
+Step 3 - Validate the progress bar
+Step 4 - Validate the final message once the progress gets complete. (Note: Avoid hard-coded wait)
+
+TestCase-3
+Step 1 - Select Multiple Windows
+Step 2 - Click on "Click Here"
+Step 3 - Log the URL of the newly opened tab
+Step 4 - Close the newly opened tab
+Step 5 - Log the title of the current page
+
+TestCase-4
+Step 1 - Select Drag and Drop
+Step 2 - Drag box A and drop it into B
+Step 3 - Validate the drop success
+Step 4 - Take the screenshot of the same
+
+TestCase-5
+Step 1 - Select Frames then click iFrame
+Step 2 - Clear the predefined text and Enter some text
+Step 3 - Apply Bold style for the newly entered text
+Step 4 - Take the screenshot of the same
+
+TestCase-6
+Step 1 - Select JavaScript Alerts
+Step 2 - Click on "Click for JS confirm"
+Step 3 - Cancel the alert
+Step 4 - Validate the alert canceled message
+
+Scenario 2 -  Design an automation test to achieve the below scenario
+
+Embed the below API tests in the same framework as a separate module. Ensure sample test data to cover at least one positive and one negative scenario
+
+Test site - https://restful-booker.herokuapp.com/
+
+1. Create booking - Derive appropriate values from the response and log on to the report
+
+2. Get booking - Derive appropriate values from the response and log on to the report
+
+3. Update booking - Derive appropriate values from the response and log on to the report
+
+4. Delete booking - Derive appropriate values from the response and log on to the report
+
+ 
+
+All the Best!!
+
+
+--
+Thanks,
+Sridhar

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="73.629">
+    <testcase classname="Test Successful and Unssuccessful Logins" name="Navigate to website then retrieve credentials and check login" time="19.566">
+        <system-out>
+            <![CDATA[Given user logs into application............................................passed
+Then click on Form Authentication link......................................passed
+Then retrieve credentials and store to file.................................passed
+Then read json and login....................................................passed
+Then validate login success and logout......................................passed
+Then validate login failure.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Test Successful and Unssuccessful Logins - Failure" name="Navigate to website then retrieve credentials and check login - Failure" time="0.107">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'&#10;System info: host: 'DESKTOP-3RVO6TM', ip: '192.168.0.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given user logs into application failure....................................failed
+Then click on Form Authentication link......................................skipped
+Then retrieve credentials and store to file.................................skipped
+Then read json and login....................................................skipped
+Then validate login success and logout......................................skipped
+Then validate login failure.................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'DESKTOP-3RVO6TM', ip: '192.168.0.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:128)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:282)
+	at stepDefinitions.StepDefinition.loginApplicationFailure(StepDefinition.java:78)
+	at ✽.user logs into application failure(file:///C:/Users/ACER/Desktop/Ramesh/src/test/resources/features/TestCase1_Failure.feature:13)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Validate progress bar and final message" name="Navigate to website and check progress bar and confirmation" time="14.28">
+        <system-out>
+            <![CDATA[Given user logs into application............................................passed
+Then click on Dynamic Loading link..........................................passed
+Then click on Example 2: Element rendered after the fact link...............passed
+Then click on start button..................................................passed
+Then validate the progress bar & verify final message.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Switch tab then close and log URL" name="Switch to tab then log URL and close and then log current page URL" time="8.639">
+        <system-out>
+            <![CDATA[Given user logs into application............................................passed
+Then click on Multiple Windows link.........................................passed
+Then click on Click Here link...............................................passed
+Then Log the URL of new tab and close it....................................passed
+Then Log the title of the current page......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Drag and Drop and then take screenshot" name="Perform Drag and Drop and then take screenshot" time="9.306">
+        <system-out>
+            <![CDATA[Given user logs into application............................................passed
+Then click on Drag and Drop link............................................passed
+Then Drag box A and drop it into B and validate success.....................passed
+Then Take Screenshot TestCase4_Drag_Drop....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Select Frame then apply style and then take screenshot" name="Perform action with Frame then apply style and then take screenshot" time="12.542">
+        <system-out>
+            <![CDATA[Given user logs into application............................................passed
+Then click on Frames link...................................................passed
+Then click on iFrame link...................................................passed
+Then clear text and enter Testing Scenario and apply bold style to text.....passed
+Then Take Screenshot TestCase5_Text_Style...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Javascript alert and cancel and validate message" name="Perform action on Javascript alert and cancel and validate message" time="7.744">
+        <system-out>
+            <![CDATA[Given user logs into application............................................passed
+Then click on JavaScript Alerts link........................................passed
+Then click on button........................................................passed
+Then cancel the alert.......................................................passed
+Then validate the canceled message..........................................passed
+Then Take Screenshot TestCase6_Cancel_Message...............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

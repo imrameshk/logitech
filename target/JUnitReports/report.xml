@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="29.085">
+    <testcase classname="Create, Get, Update and Delete Booking" name="Create Booking and derive appropriate values from the response and log on to the report" time="20.067">
+        <system-out>
+            <![CDATA[Given Create Booking........................................................passed
+Then Get Booking............................................................passed
+And I am an authorized user.................................................passed
+Then Update Booking.........................................................passed
+And Delete Booking..........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create, Get, Update and Delete Booking - Fail Scenario" name="Create Booking and derive appropriate values from the response and log on to the report - Fail Scenario" time="7.465">
+        <system-out>
+            <![CDATA[Given Create Booking........................................................passed
+Then Get Booking............................................................passed
+Then Update Booking.........................................................passed
+And Delete Booking..........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

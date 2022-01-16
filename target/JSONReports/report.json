@@ -1,0 +1,248 @@
+[
+  {
+    "line": 10,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-16T22:33:24.385Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12999900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinition.initializeTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Create Booking and derive appropriate values from the response and log on to the report",
+        "description": "",
+        "id": "create--get--update-and-delete-booking;create-booking-and-derive-appropriate-values-from-the-response-and-log-on-to-the-report",
+        "after": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinition.takeScreenshotonFailure(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinition.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12006392200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Create Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.createBooking()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1894402800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Get Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.getBooking()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2180137200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am an authorized user",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.iAmAnAuthorizedUser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1877565300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Update Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.updateBooking()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1854624700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Delete Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.deleteBooking()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@apiregression"
+          }
+        ]
+      }
+    ],
+    "name": "Create, Get, Update and Delete Booking",
+    "description": "",
+    "id": "create--get--update-and-delete-booking",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TestCase7.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 9,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 10,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-16T22:33:44.464Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1004200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinition.initializeTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Create Booking and derive appropriate values from the response and log on to the report - Fail Scenario",
+        "description": "",
+        "id": "create--get--update-and-delete-booking---fail-scenario;create-booking-and-derive-appropriate-values-from-the-response-and-log-on-to-the-report---fail-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 998300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinition.takeScreenshotonFailure(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.StepDefinition.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1861910200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Create Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.createBooking()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1957987200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Get Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.getBooking()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1832328200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Update Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.updateBooking()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1795160300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Delete Booking",
+            "match": {
+              "location": "stepDefinitions.ApiStepDefinitions.deleteBooking()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@fail"
+          },
+          {
+            "name": "@apiregression"
+          }
+        ]
+      }
+    ],
+    "name": "Create, Get, Update and Delete Booking - Fail Scenario",
+    "description": "",
+    "id": "create--get--update-and-delete-booking---fail-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TestCase7_failure.feature",
+    "tags": [
+      {
+        "name": "@fail",
+        "type": "Tag",
+        "location": {
+          "line": 9,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

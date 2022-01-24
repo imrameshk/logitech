@@ -8,9 +8,9 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(features="src/test/resources/features", 
 glue= {"stepDefinitions"},
 tags = {"@regression"},
-plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
-		"junit:target/cucumber-reports/Cucumber.xml",
-		"html:target/cucumber-reports"},
+plugin = {"pretty", "junit:target/UI/JUnitReports/uireport.xml",
+		"json:target/UI/JSONReports/uireport.json",
+		"html:target/UI/UIHtmlReports"},
 monochrome = true)
 public class UITestRunner {
 

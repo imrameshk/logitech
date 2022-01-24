@@ -1,13 +1,11 @@
 package stepDefinitions;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.TakesScreenshot;
+import java.lang.Object;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -15,6 +13,7 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import utilities.*;
+import org.junit.Assert.*;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -64,7 +63,7 @@ public class StepDefinition {
 		
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		assertEquals(driver.getTitle(),"The Internet");
+		org.junit.Assert.assertEquals(driver.getTitle(),"The Internet");
 		
 	}
 	
@@ -87,7 +86,7 @@ public class StepDefinition {
 
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		assertEquals(driver.getTitle(),"The Internet1");
+		org.junit.Assert.assertEquals(driver.getTitle(),"The Internet1");
 		
 		
 	}
@@ -122,7 +121,7 @@ public class StepDefinition {
 	public void validateCancelMsg() throws InterruptedException {
 		String cancelMsg = driver.findElement(By.xpath("//*[@id='result']")).getText();
 
-		assertEquals(cancelMsg,"You clicked: Cancel");
+		org.junit.Assert.assertEquals(cancelMsg,"You clicked: Cancel");
 		
 	}
 
@@ -135,7 +134,7 @@ public class StepDefinition {
 		System.out.println("Loading done");
 		String finalMsg = driver.findElement(By.xpath("//*[@id='finish']")).getText();
 
-		assertEquals(finalMsg, "Hello World!");
+		org.junit.Assert.assertEquals(finalMsg, "Hello World!");
 
 	}
 
@@ -154,7 +153,7 @@ public class StepDefinition {
 	public void getURL() {
 		System.out.println("URL of current page : " + driver.getCurrentUrl());
 		
-		assertEquals(driver.getTitle(),"The Internet");
+		org.junit.Assert.assertEquals(driver.getTitle(),"The Internet");
 	}
 
 	@Then("^Drag box A and drop it into B and validate success$")
@@ -189,7 +188,7 @@ public class StepDefinition {
 		} else {
 			System.out.println("FAIL: Box couldn't be dropped to target as expected");
 		}
-		assertEquals(textTo,"A");
+		org.junit.Assert.assertEquals(textTo,"A");
 		
 	}
 
@@ -282,7 +281,7 @@ public class StepDefinition {
 			String errorMsg = driver.findElement(By.xpath("//*[@id='flash']")).getText();
 			errorMsg = errorMsg.split("\n")[0];
 
-			assertTrue(errorMsg.equals("Your password is invalid!"));
+			org.junit.Assert.assertTrue(errorMsg.equals("Your password is invalid!"));
 
 	}
 

@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import org.json.JSONException;
 import org.json.simple.parser.ParseException;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 
 import io.cucumber.java.en.Given;
 

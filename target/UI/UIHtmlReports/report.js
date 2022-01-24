@@ -126,7 +126,7 @@ formatter.match({
   "location": "stepDefinitions.StepDefinition.loginApplicationFailure()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0-alpha-5\u0027, revision: \u0027b3a0d621cc\u0027\nSystem info: host: \u0027DESKTOP-3RVO6TM\u0027, ip: \u0027192.168.0.42\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.13\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:128)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:282)\r\n\tat stepDefinitions.StepDefinition.loginApplicationFailure(StepDefinition.java:78)\r\n\tat ✽.user logs into application failure(file:///C:/Users/ACER/Desktop/Ramesh/src/test/resources/features/TestCase1_Failure.feature:13)\r\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003cThe Internet[]\u003e but was:\u003cThe Internet[1]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepDefinitions.StepDefinition.loginApplicationFailure(StepDefinition.java:89)\r\n\tat ✽.user logs into application failure(file:///C:/Users/ACER/Desktop/Ramesh/src/test/resources/features/TestCase1_Failure.feature:13)\r\n",
   "status": "failed"
 });
 formatter.step({
@@ -179,9 +179,9 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0-alpha-5\u0027, revision: \u0027b3a0d621cc\u0027\nSystem info: host: \u0027DESKTOP-3RVO6TM\u0027, ip: \u0027192.168.0.42\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.13\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:128)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:303)\r\n\tat stepDefinitions.StepDefinition.takeScreenshotonFailure(StepDefinition.java:292)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

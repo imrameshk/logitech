@@ -9,9 +9,9 @@ import io.cucumber.junit.Cucumber;
 glue= {"stepDefinitions"},
 tags = {"@apiregression"},
 //monochrome= true,
-plugin = {"pretty", "junit:target/JUnitReports/report.xml",
-		"json:target/JSONReports/report.json",
-		"html:target/HtmlReports"}
+plugin = {"pretty", "junit:target/API/JUnitReports/apireport.xml",
+		"json:target/API/JSONReports/apireport.json",
+		"html:target/API/APIHtmlReports"}
 		)
 public class APITestRunner {
 

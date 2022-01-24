@@ -74,6 +74,16 @@ public class StepDefinition {
 		String appURL = fileUtil.readExcel(excelPath);
 		
 		System.out.println("Application URL : "+ appURL);
+		
+		System.out.println("Before Test");
+		if(browser.equalsIgnoreCase("chrome")) {
+		System.setProperty("webdriver.chrome.driver", path + fileUtil.getProperty("chromedriverfile"));
+		System.out.println(path + fileUtil.getProperty("chromedriverfile"));
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		}
+		
 
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
